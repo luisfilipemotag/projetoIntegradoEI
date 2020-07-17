@@ -1,0 +1,28 @@
+.contact-form{ margin-top:15px;}
+.contact-form .textarea{ min-height:220px; resize:none;}
+.form-control{ box-shadow:none; border-color:#eee; height:49px;}
+.form-control:focus{ box-shadow:none; border-color:#00b09c;}
+.form-control-feedback{ line-height:50px;}
+.form-control-feedback {
+line-height: 50px;
+top: 0px;
+}
+
+.container{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbotron .container {
+  max-width: 100%;
+}
+.jumbotron{
+  heght:100%;
+  width:100%;
+}
+.Enviopara{
+	border-bottom: 2px solid #ff9966;
+	text-transform: uppercase 
+}

@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorAccent">@color/bla</item>
+        <item name="android:icon">@drawable/logo</item>
+    </style>
+
+    <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/bla</item>
+        <item name="android:textColorSecondary">@color/bla</item>
+    </style>
+
+</resources>

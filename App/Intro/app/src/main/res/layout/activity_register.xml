@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="288dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778"
+        app:srcCompat="@drawable/logobonito" />
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="586dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/EtNome"
+                android:layout_width="309dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="Primeiro nome"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etLnome"
+                android:layout_width="309dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:autoLink="none"
+                android:ems="10"
+                android:hint="Ultimo nome"
+                android:inputType="textNoSuggestions"   />
+
+
+            <EditText
+                android:id="@+id/EtMail"
+                android:layout_width="309dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/ETTele"
+                android:layout_width="309dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="telefone"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/EtPass"
+                android:layout_width="309dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="password"
+                android:inputType="textPassword" />
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="311dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@color/bla" />
+
+            <TextView
+                android:id="@+id/tvidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="51dp"
+                android:layout_marginTop="15dp"
+                android:text="Idade"
+                android:textSize="18sp" />
+
+            <DatePicker
+                android:id="@+id/datePicker1"
+                android:layout_width="313dp"
+                android:layout_height="178dp"
+                android:layout_marginLeft="51dp"
+                android:layout_marginTop="10dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+            <TextView
+                android:id="@+id/txterroicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="51dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="51dp"
+                android:text="Sexo"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_width="249dp"
+                android:layout_height="108dp"
+                android:layout_marginLeft="51dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/masc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_weight="1"
+                    android:text="Masculino" />
+
+                <RadioButton
+                    android:id="@+id/fem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_weight="1"
+                    android:text="Feminino" />
+
+                <RadioButton
+                    android:id="@+id/outroR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_weight="1"
+                    android:text="Outro" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="311dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@color/bla" />
+
+
+            <EditText
+                android:id="@+id/ETmorada"
+                android:layout_width="309dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:autoLink="none"
+                android:ems="10"
+                android:hint="Morada"
+                android:inputType="textNoSuggestions"
+                />
+
+            <EditText
+                android:id="@+id/etLocalidade"
+                android:layout_width="309dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="localidade"
+                android:inputType="textNoSuggestions"
+                />
+
+            <EditText
+                android:id="@+id/ETCodpostal"
+                android:layout_width="309dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="cod postal"
+                android:inputType="numberSigned"
+                />
+
+            <Button
+                android:id="@+id/BtnReg"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/bla"
+                android:text="Registar"
+                android:textColor="@color/thecolor" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

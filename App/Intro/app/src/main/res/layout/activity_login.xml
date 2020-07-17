@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/thecolor"
+    tools:context=".login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="288dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778"
+        app:srcCompat="@drawable/logobonito" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="408dp"
+        android:layout_height="467dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/thecolor"
+            android:orientation="vertical">
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/etNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/avatar"
+
+                >
+
+                <EditText
+                    android:id="@+id/InEmail"
+                    android:layout_width="294dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/bluish"
+
+                    android:ems="10"
+                    android:hint="E-Mail"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/bla"
+
+                    android:textColorLink="@color/bla" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/etPasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/InPass"
+                    android:layout_width="297dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="52dp"
+
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/bluish"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/bla"
+                    android:textColorLink="@color/bla"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <RadioButton
+                android:id="@+id/lembrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:text="relembrar utilizador" />
+
+            <Button
+                android:id="@+id/BtnLogin"
+                android:layout_width="228dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="44dp"
+                android:background="@color/bla"
+                android:text="Entrar"
+                android:textColor="@color/thecolor"
+                android:textColorLink="@color/bla" />
+
+
+            <TextView
+                android:id="@+id/btnRegistar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="60dp"
+                android:clickable="true"
+                android:onClick="GoReg"
+                android:text="Novo aqui?  Registar"
+                android:textColor="@color/bla"
+                android:textColorLink="@color/bla"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:text="" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

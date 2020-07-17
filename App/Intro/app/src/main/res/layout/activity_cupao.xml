@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/thecolor"
+    tools:context=".cupao">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="404dp"
+        android:layout_height="730dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp">
+
+            <RadioButton
+                android:id="@+id/radioconfirma"
+                android:layout_width="30dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="172dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toStartOf="@+id/btndesfidelizara"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toEndOf="@+id/imabac"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/btndesfidelizara"
+                android:layout_width="110dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/bla"
+                android:text="desfidelizar"
+                android:textColor="@color/thecolor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imabac"
+                android:layout_width="31dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="32dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/thecolor"
+                android:onClick="back"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="342dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bottom_navbar_background"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btndesfidelizara">
+
+                <TextView
+                    android:id="@+id/txtdesc"
+                    style="@android:style/Widget.DeviceDefault.Light.TextView"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Descontos"
+                    android:textAlignment="center"
+                    android:textColor="@color/bla" />
+
+                <TextView
+                    android:id="@+id/txtcarimbo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+
+                    android:text="Carimbos"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/txtfav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Favoritos"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listadescontos"
+            android:layout_width="match_parent"
+            android:layout_height="589dp"
+            android:background="@color/thecolor"
+            tools:ignore="MissingConstraints">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtvazio3"
+        android:layout_width="340dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="300dp"
+        android:text="não tem mais cupoes volte mais tarde"
+        android:textAlignment="center"
+        android:textColor="@color/bla"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

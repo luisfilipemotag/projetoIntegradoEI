@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Direitosdeutilizacao">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="204dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logobonito" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Polı́tica de Privacidade  "
+        android:textColor="@color/bla"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="368dp"
+        android:layout_height="480dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:text='1. IDENTIFICAÇÃO DO RESPONSÁVEL PELO TRATAMENTO Identificação da Empresa: NIPC Sede Contacto Encarregado da Proteção de Dados 2. INFORMAÇÃO E CONSENTIMENTO A Lei da Proteção de Dados Pessoais (em diante “LPD”) e o Regulamento Geral de Proteção de Dados (Regulamento (UE) 2016/679 do Parlamento Europeu e do Conselho de 27 de abril de 2016, em diante “RGPD”) asseguram a proteção das pessoas singulares no que diz respeito ao tratamento de dados pessoais e à livre circulação desses dados. Nos termos legais são considerados "dados pessoais" qualquer informação, de qualquer natureza e independentemente do respetivo suporte, incluindo a imagem, relativa a uma pessoa singular identificada ou identificável, pelo que a proteção não abrange os dados de pessoas coletivas. Mediante a aceitação da presente Política de Privacidade o utilizador presta o seu consentimento informado, expresso, livre e inequívoco para que os dados pessoais fornecidos através do site https://xxxxxxxxxxxxxx sejam incluídos num ficheiro da responsabilidade da xxxxxxxx, cujo tratamento nos termos da LPD e do RGPD cumpre as medidas de segurança técnicas e organizativas adequadas.  Os dados presentes nesta base são unicamente os dados prestados pelos próprios na altura do seu registo, sendo recolhidos e processados automaticamente, nos termos do Regulamento Geral de Proteção de Dados. Em caso algum será solicitada informação sobre convicções filosóficas ou políticas, filiação partidária ou sindical, fé religiosa, vida privada e origem racial ou étnica bem como os dados relativos à saúde e à vida sexual, incluindo os dados genéticos. Em caso algum levaremos a cabo qualquer das seguintes atividades com os dados pessoais que nos sejam facultados através deste site:  Ceder a outras pessoas ou outras entidades, sem o consentimento prévio do titular dos dados;  Transferir para fora do Espaço Económico Europeu (EEE), sem o consentimento prévio do titular dos dados.   3. FINALIDADES DO TRATAMENTO DE DADOS PESSOAIS Os dados pessoais que tratamos através desta página serão unicamente utilizados para as seguintes finalidades:  (i) Processamento de encomendas;  (ii) Comunicação com clientes e esclarecimento de dúvidas;  (iii) Processamento de pedidos de informação;  (iv) Processamento de reclamações;  (viii) Prevenção e combate à fraude;  (ix) Solicitação de comentários a produtos ou serviços adquiridos;  (x) Realização de inquéritos de satisfação.  (xi) Comunicações de marketing direto (caso tenha consentido no tratamento dos seus dados pessoais para esta finalidade); A xxxxxxxxxxx garante a confidencialidade de todos os dados fornecidos pelos seus clientes. Não obstante a xxxxxxxxxx proceder à recolha e ao tratamento de dados de forma segura e que impede a sua perda ou manipulação, utilizando as técnicas mais aperfeiçoadas para o efeito, informamos que a recolha em rede aberta permite a circulação dos dados pessoais sem condições de segurança, correndo o risco de ser vistos e utilizados por terceiros não autorizados.  4. MEDIDAS DE SEGURANÇA A xxxxxxxxxxxx declara que implementou e continuará a implementar as medidas de segurança de natureza técnica e organizativa necessárias para garantir a segurança dos dados de carácter pessoal que lhe sejam fornecidos visando evitar a sua alteração, perda, tratamento e/ou acesso não autorizado, tendo em conta o estado atual da tecnologia, a natureza dos dados armazenados e os riscos a que estão expostos. A xxxxxxxxxxxxxxxxxx garante a confidencialidade de todos os dados fornecidos pelos seus clientes quer no registo, quer no processo de compra/encomenda de produtos ou serviços. A recolha e tratamento de dados realiza-se de forma segura e que impede a sua perda ou manipulação. Todos os dados serão inseridos num Servidor Seguro que os encripta. O utilizador poderá verificar que o seu browser é seguro se o símbolo do cadeado aparecer ou se o endereço começar com https em vez de http.  Os dados pessoais são tratados com o nível de proteção legalmente exigível para garantir a segurança dos mesmos e evitar a sua alteração, perda, tratamento ou acesso não autorizado, tendo em conta o estado da tecnologia, sendo o utilizador consciente e aceitando que as medidas de segurança em Internet não são inexpugnáveis.  5. EXERCÍCIO DOS DIREITOS De acordo com as disposições da LDPD e do RGPD, o utilizador pode exercer a todo o tempo os seus direitos de acesso, retificação, apagamento, limitação, oposição e portabilidade, através de solicitação por qualquer dos seguintes meios: xxxxxxxxxxxxxxxxxx 6. AUTORIDADE DE CONTROLO Nos termos legais, o titular dos dados tem o direito de apresentar uma reclamação em matéria de proteção de dados pessoais à autoridade de controlo competente, a Comissão Nacional de Proteção de Dados (CNPD). ' />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/rbsim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Aceito" />
+
+                <RadioButton
+                    android:id="@+id/rbnao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não aceito" />
+
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/bla"
+                android:text="Seguinte"
+                android:textColor="@color/thecolor" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

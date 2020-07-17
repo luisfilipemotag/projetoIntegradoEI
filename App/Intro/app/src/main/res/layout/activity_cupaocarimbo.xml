@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/thecolor"
+    tools:context=".cupaocarimbo">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="418dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="386dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="342dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bottom_navbar_background"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/txtdesc"
+                    style="@android:style/Widget.DeviceDefault.Light.TextView"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Descontos"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/txtcarimbos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+
+                    android:text="Carimbos"
+                    android:textAlignment="center"
+                    android:textColor="@color/bla" />
+
+                <TextView
+                    android:id="@+id/txtfavcar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Favoritos"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imabac"
+                android:layout_width="35dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="8dp"
+
+                android:layout_marginEnd="8dp"
+                android:background="@color/thecolor"
+                android:onClick="back"
+                app:layout_constraintEnd_toStartOf="@+id/radioconb"
+                app:layout_constraintHorizontal_bias="0.083"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
+
+            <RadioButton
+                android:id="@+id/radioconb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toStartOf="@+id/btndesfb"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.954" />
+
+            <Button
+                android:id="@+id/btndesfb"
+                android:layout_width="110dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/bla"
+                android:text="desfidelizar"
+                android:textColor="@color/thecolor"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.333" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listacarimbo"
+            android:layout_width="401dp"
+            android:layout_height="598dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/thecolor"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtvazio4"
+        android:layout_width="331dp"
+        android:layout_height="170dp"
+        android:text="não tem mais carimbos volte mais tarde"
+        android:textAlignment="center"
+        android:textColor="@color/bla"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

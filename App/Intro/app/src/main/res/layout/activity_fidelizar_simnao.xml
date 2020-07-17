@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/thecolor"
+    android:orientation="vertical"
+    tools:context=".FidelizarSIMNAO">
+
+
+    <ImageView
+        android:id="@+id/imgccupd"
+        android:layout_width="371dp"
+        android:layout_height="210dp"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintBottom_toBottomOf="@+id/Subtituloc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Tituloc"
+        app:layout_constraintVertical_bias="0.428"
+        app:srcCompat="@android:drawable/screen_background_dark_transparent" />
+
+    <TextView
+        android:id="@+id/Subtituloc"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tituloc"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="2dip"
+        android:textColor="@color/bla"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/Tituloc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/Tituloc"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="316dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="305dp"
+        android:paddingBottom="2dip"
+        android:textColor="@color/bla"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/BtnLogin"
+        app:layout_constraintEnd_toEndOf="@+id/imgccupd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtnLogin"
+        android:layout_width="417dp"
+        android:layout_height="0dp"
+        android:background="@color/bla"
+        android:onClick="Fidelizar"
+        android:text="Fidelizar"
+        android:textColor="@color/thecolor"
+        android:textColorLink="@color/bla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tituloc" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="35dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/thecolor"
+        android:onClick="back"
+        app:layout_constraintBottom_toTopOf="@+id/imgccupd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+
+</android.support.constraint.ConstraintLayout>

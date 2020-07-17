@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Biz Carteira de Fidelizacao</string>
+    <string name="title_activity_main">Main</string>
+    <string name="title_home">Mapa</string>
+    <string name="title_dashboard">Carteira</string>
+    <string name="title_notifications">Notificações</string>
+    <string name="title_configuracoes">configurações</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string-array name="O">
+        <item>Desfidelizar</item>
+
+    </string-array>
+</resources>

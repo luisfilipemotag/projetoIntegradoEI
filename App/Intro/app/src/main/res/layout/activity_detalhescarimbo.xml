@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/thecolor"
+    tools:context=".detalhescarimbo">
+
+    <ImageButton
+        android:id="@+id/imabac3"
+        android:layout_width="35dp"
+        android:layout_height="33dp"
+
+        android:layout_marginStart="28dp"
+
+        android:layout_marginTop="28dp"
+        android:background="@color/thecolor"
+        android:onClick="carimbos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="286dp"
+        android:layout_height="271dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/qrcodedet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/Titulod"
+            android:layout_width="253dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/datafimd"
+            android:layout_width="253dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/premiod"
+            android:layout_width="254dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/descricaod"
+            android:layout_width="254dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Quando chegar as 10 marcas vai aparecer o qrcod referido"
+            android:textAlignment="center" />
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="352dp"
+        android:layout_height="169dp"
+
+        android:layout_marginTop="8dp"
+        android:background="@color/thecolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imabac3"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/imgccupd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/Subtituloc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Tituloc"
+            app:srcCompat="@android:drawable/screen_background_dark_transparent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imgfiltrod"
+                android:layout_width="299dp"
+                android:layout_height="110dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/cupaoa"
+                tools:srcCompat="?android:attr/panelBackground" />
+
+            <TextView
+                android:id="@+id/cTitulod"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgfiltrod"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="-34dp"
+                android:text="Titulo"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/cdatafimd"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/cvale"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="224dp"
+                android:layout_marginBottom="38dp"
+                android:text="data" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/qrcodedet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtidcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qrcodedet" />
+
+</android.support.constraint.ConstraintLayout>
